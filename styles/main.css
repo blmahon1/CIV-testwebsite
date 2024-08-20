@@ -3,3 +3,14 @@ body {
     background-color: bisque;
     color: hsl(33, 100%, 28%);
 }
+table, th, td {
+    border: 1px solid hsl(33, 100%, 28%);
+    border-collapse: collapse;
+    padding: 5px;
+}
+.saturday {
+    background-color: hsla(42, 100%, 50%, 0.71);
+}
+.sunday {
+    background-color: hsla(42, 100%, 71%, 0.71);
+}
