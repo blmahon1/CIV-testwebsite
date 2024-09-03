@@ -8,6 +8,41 @@ table, th, td {
     border-collapse: collapse;
     padding: 5px;
 }
+.logo {
+    max-width: 80px;
+}
+.main-header {
+    background-color: hsl(33, 93%, 77%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 10px;
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+}
+.navigation a {
+    text-decoration: none;
+    color: hsl(33, 100%, 28%);
+    padding: 15px;
+}
+.navigation a:hover {
+    color:hsla(42, 100%, 50%, 0.71);
+    background-color: hsl(33, 100%, 22%);
+}
+.banner {
+    background-image: url("../images/haxxor.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.banner h1 {
+    color: hsl(33, 93%, 77%)
+}
 .saturday {
     background-color: hsla(42, 100%, 50%, 0.71);
 }
