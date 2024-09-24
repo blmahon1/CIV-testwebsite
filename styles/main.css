@@ -75,8 +75,9 @@ table, th, td {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid hsl(33, 100%, 28%);
     text-align: center;
+    box-shadow: 0 0 5px 3px hsl(34, 82%, 71%);
 }
 .card-image {
     display: block;
