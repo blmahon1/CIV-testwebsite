@@ -2,6 +2,7 @@ body {
     font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     background-color: bisque;
     color: hsl(33, 100%, 28%);
+    margin: 0px;
 }
 table, th, td {
     border: 1px solid hsl(33, 100%, 28%);
@@ -10,6 +11,7 @@ table, th, td {
 }
 .logo {
     max-width: 80px;
+    margin-left: 1em;
 }
 .main-header {
     background-color: hsl(33, 93%, 77%);
@@ -38,22 +40,64 @@ table, th, td {
     background-size: cover;
     min-height: 100vh;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
-.banner h1 {
-    background-color: hsla(33, 93%, 77%, 0.594);
+.banner-text {
+    text-align: center;
     color: hsl(33, 93%, 77%);
 }
 .home-content {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
     margin: 2em auto;
     gap: 20px;
 }
-/* .card-image {
-    /* aspect-ratio: 4/3;
-    object-fit: cover
-} */
+.main-footer {
+    background-color: hsl(33, 100%, 72%);
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-footer a {
+    color: hsl(0, 0%, 36%);
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.main-footer a:hover {
+    color: hsl(0, 0%, 67%);
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+}
+.card-image {
+    display: block;
+    max-width: 20em;
+    max-height: 30em;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+} 
+.card-content {
+    padding: 1em;
+    text-wrap: wrap;
+}
+.card-button {
+    font-size: 16px;
+    color: hsl(0, 0%, 36%);
+    background-color: hsl(0, 0%, 67%);
+    padding: 10px;
+    width: 50%;
+    border-radius: 12px;
+    opacity: 0.6;
+    cursor: not-allowed;
+    margin-bottom: 1em;
+}
