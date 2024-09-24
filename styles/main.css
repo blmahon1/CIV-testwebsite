@@ -14,7 +14,7 @@ table, th, td {
     margin-left: 1em;
 }
 .main-header {
-    background-color: hsl(33, 93%, 77%);
+    background-color: rgb(251, 202, 142);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -27,7 +27,7 @@ table, th, td {
 }
 .navigation a {
     text-decoration: none;
-    color: hsl(33, 100%, 28%);
+    color: rgb(143, 79, 0);
     padding: 15px;
 }
 .navigation a:hover {
@@ -35,7 +35,7 @@ table, th, td {
     background-color: hsl(33, 100%, 22%);
 }
 .banner {
-    background-image: url("../images/haxxor.png");
+    background-image: url(../images/be_unafraid.png);
     background-position: center;
     background-size: cover;
     min-height: 100vh;
@@ -92,12 +92,20 @@ table, th, td {
 }
 .card-button {
     font-size: 16px;
-    color: hsl(0, 0%, 36%);
-    background-color: hsl(0, 0%, 67%);
+    color: hsl(33, 100%, 28%);
+    background-color: hsl(34, 82%, 71%);
     padding: 10px;
     width: 50%;
     border-radius: 12px;
-    opacity: 0.6;
-    cursor: not-allowed;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    box-shadow: 0 10px hsl(33, 100%, 28%);
+    cursor: pointer;
+    user-select: none;
+}
+.card-button:hover {
+    background-color: hsl(34, 83%, 64%);
+}
+.card-button:active {
+    box-shadow: 0 5px hsl(33, 100%, 17%);
+    transform: translateY(5px);
 }
