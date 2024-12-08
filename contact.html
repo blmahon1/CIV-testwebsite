@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <link rel="icon" href="icons/home-solid.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <meta charset="utf-8">
+    <meta name="description" content="a web page for learning HTML and CSS">
+    <meta name="keyword" content="HTML,CSS,learning">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="logo" href="/">
+            <img src="icons/code-solid.png" alt="website logo">
+        </a>
+        <button type="button" class="nav-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <form class="search" method="get" action="https://example.com/search">
+            <input type="search" name="query" placeholder="Find in site">
+            <button type="submit">Search</button>
+        </form>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="banner-text">
+        <h1>Contact Us</h1> <!-- text can go here -->
+    </div>
+    <main class="contact-content">
+        <div class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.297168898269!2d151.1849472763596!3d-33.821380716605475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1730163082986!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="card-content">
+                <h4>Our Location</h4>
+                <h5>Opening Hours</h5>
+                <p>Monday -- 9:00am - 5:00pm</p>
+                <p>Tuesday -- 9:00am - 5:00pm</p>
+                <p>Wednesday -- 9:00am - 5:00pm</p>
+                <p>Thursday -- 9:00am - 5:00pm</p>
+                <p>Friday -- 9:30am - 4:30pm</p>
+                <p>Saturday -- 11:00am - 3:00pm</p>
+                <p>Sunday -- 11:00am - 3:00pm</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <form action="http://localhost/form-handler" method="post">
+                <form action="http://localhost/form-handler" method="post" id="contact">
+                    <label for="username">Name</label>
+                    <input type="text" name="username" required id="username" placeholder="Jane Smith">
+                    <label for="useremail">Email Address</label>
+                    <input type="email" name="useremail" required id="useremail" placeholder="jsmith@example.com">
+                    <br><br>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Hello there" rows="5" cols="30"></textarea>
+                    <br><br>
+                    <label for="userpref">
+                        <input type="checkbox" name="preference" checked value="marketing" id="userpref">
+                        Do you like spam?
+                    </label>
+                    <div class="form-buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+               </form>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <nav class="footer-nav">
+            <a href="#">returns and exchange policies</a>
+            <a href="#">delivery policies</a>
+        </nav>
+        <nav class="socials">
+            <a href="https://facebook.com/tiptoeshoes">
+                <i class="fa-brands fa-square-facebook"></i>
+                facebook
+            </a>
+            <a href="https://instagram.com/tiptoeshoes">
+                <i class="fa-brands fa-square-instagram"></i>
+                instagram
+            </a>
+            <a href="https://twitter.com/tiptoeshoes">
+                <i class="fa-brands fa-square-x-twitter"></i>
+                x
+            </a>
+            <a href="https://youtube.com/tiptoeshoes">
+                <i class="fa-brands fa-youtube"></i>
+                youtube
+            </a>
+        </nav>
+    </footer>
+</body>
+</html> 
